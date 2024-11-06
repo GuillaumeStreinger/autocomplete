@@ -71,18 +71,20 @@ export default function Autocomplete({ data = [], placeholder = "Type to search.
     setIsListOpen(false);
   };
 
-  const handleRemoveItem = () => {
-    setInputValue("");
-    setSelectedItems([]);
+  const handleRemoveItem = (itemToRemove) => {
+    if (multiSelect) {
+      setSelectedItems(selectedItems.filter((item) => item !== itemToRemove));
+    } else {
+      setInputValue("");
+    }
   };
 
   const handleBlur = () => {
     setIsListOpen(false);
   };
-
-  return (
-    <div className="auto-complete">
-      <div className="selected-items">
+        return (
+          <div className="auto-complete">
+            <div className="selected-items">
         {multiSelect && selectedItems.map((item, index) => (
           <span key={index} className="selected-item">
             {item.name || `${item.firstName} ${item.lastName}`}
