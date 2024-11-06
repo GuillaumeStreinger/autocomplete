@@ -1,0 +1,17 @@
+.product-template {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .product-template strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-template p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  

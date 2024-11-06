@@ -1,0 +1,78 @@
+.auto-complete.multi-select {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.selected-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.selected-item {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.selected-item .remove-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+.auto-complete input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.clear-icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 14px;
+}
+
+.autobox {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.autobox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.autobox::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.autobox::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.auto-complete {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
